@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("TimeTable.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Timetable2.Resource", IsApplication=true)]
 
-namespace TimeTable
+namespace Timetable2
 {
 	
 	
@@ -44,14 +44,8 @@ namespace TimeTable
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040002
-			public const int btnGetTable = 2130968578;
-			
-			// aapt resource value: 0x7f040001
-			public const int inputTable = 2130968577;
-			
-			// aapt resource value: 0x7f040000
-			public const int stackView1 = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int myButton = 2131034112;
 			
 			static Id()
 			{
@@ -66,8 +60,8 @@ namespace TimeTable
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f020000
-			public const int Main = 2130837504;
+			// aapt resource value: 0x7f030000
+			public const int Main = 2130903040;
 			
 			static Layout()
 			{
@@ -79,11 +73,30 @@ namespace TimeTable
 			}
 		}
 		
+		public partial class Mipmap
+		{
+			
+			// aapt resource value: 0x7f020000
+			public const int Icon = 2130837504;
+			
+			static Mipmap()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Mipmap()
+			{
+			}
+		}
+		
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int app_name = 2130903040;
+			// aapt resource value: 0x7f040001
+			public const int app_name = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int hello = 2130968576;
 			
 			static String()
 			{
