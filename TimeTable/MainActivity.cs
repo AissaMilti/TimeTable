@@ -23,6 +23,7 @@ namespace TimeTable
             SetContentView(Resource.Layout.Main);
 
             Button btnGetTable = FindViewById<Button>(Resource.Id.btnGetTable);
+            
 
             btnGetTable.Click += BtnGetTableOnClick;
 
@@ -31,6 +32,13 @@ namespace TimeTable
         public async void BtnGetTableOnClick(object sender, EventArgs eventArgs)
         {
             EditText location = FindViewById<EditText>(Resource.Id.inputTable);
+
+            TextView txtStation = FindViewById<TextView>(Resource.Id.txtStation);
+            TextView txtDeparture = FindViewById<TextView>(Resource.Id.txtDeparture);
+            TextView txtDestination = FindViewById<TextView>(Resource.Id.txtDestination);
+            TextView txtStation2 = FindViewById<TextView>(Resource.Id.txtStation2);
+            TextView txtDepature2 = FindViewById<TextView>(Resource.Id.txtDeparture2);
+            TextView txtDestination2 = FindViewById<TextView>(Resource.Id.txtDestination2);
 
             using (var locationClient = new HttpClient())
             {
@@ -65,6 +73,17 @@ namespace TimeTable
                 var departureTime2 = resu.Departure[1].Stops.Stop[0].depTime;
                 var stationName2 = resu.Departure[1].Stops.Stop[0].name;
                 var destination2 = resu.Departure[1].direction;
+
+               
+                txtStation.Text = stationName;
+                txtDeparture.Text = departureTime;
+                txtDestination.Text = destination;
+                txtStation2.Text = stationName2;
+                txtDepature2.Text = departureTime2;
+                txtDestination2.Text = destination2;
+
+
+
 
             }
 
