@@ -9,6 +9,10 @@ using Java.Security;
 using Newtonsoft.Json;
 using TimeTable.Services;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+
 
 namespace TimeTable
 {
@@ -20,7 +24,12 @@ namespace TimeTable
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            //AppCenter.Start("f39851d7-7755-4a32-ab49-da9f5f917697",
+            //    typeof(Analytics), typeof(Crashes));
+
             base.OnCreate(savedInstanceState);
+
+          
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
